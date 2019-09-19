@@ -1,6 +1,19 @@
 import React from 'react'
-export default class OtherConnIssue extends React.Component{
-  render(){
-    return(<div>Other's Connection Issue</div>)
+import './othersIssue.scss'
+
+export default class Broadcast extends React.Component {
+
+
+  render() {
+    return (
+      <div className="otherConnection" >
+        <img alt='userPhoto error'
+          className="userPhoto"
+          src="/connection-issue.svg"
+        ></img>
+       <p> Other's Connection Issue </p>
+
+      </div>
+    )
   }
 }

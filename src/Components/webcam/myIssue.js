@@ -1,6 +1,16 @@
 import React from 'react'
+import './myIssue.scss'
 export default class MyWebcamIssue extends React.Component{
   render(){
-    return(<div>My Webcam Issue</div>)
+    return(
+    	<div className="mywebcamIssue" >
+        <img alt='userPhoto error'
+          className="userPhoto"
+          src="/webcam-issue.svg"
+        ></img>
+       <p>My Webcam Issue</p>
+
+      </div>
+    )
   }
 }

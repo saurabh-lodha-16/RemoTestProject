@@ -1,23 +1,27 @@
 .userJoined {
   position: absolute;
-  background: #7E76BF;
+  background: #fff;
   text-align: center;
-  padding: 4px;
-  width: 200px;
-  height: 40px;
+  width: 240px;
+  height: 48px;
   border-radius: 5px;
-  margin-top: 80px;
-  margin-left: 850px;
+  top: 230px;
+  left: 530px;
+  border: 2px solid #3f3955;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
 
   p {
-    color: white;
-    font-size: 1em;
-    font-family: "Manjari", sans-serif;
+    color: #3f3955;
+    font-size: 18px;
+    margin: 0;
+    line-height: 48px;
+    text-transform: capitalize;
   }
 
   .userPhoto {
-    padding-top:3px;
-    padding-left:6px;
     float: left;
+    height: 48px;
+    height: 48px;
+    background: #3f3955;
   }
 }

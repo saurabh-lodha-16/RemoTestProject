@@ -5,12 +5,10 @@ export default class UserLeft extends React.Component {
 
   render() {
     return (
-      <div className="userJoined" >
-        <link rel="stylesheet" type="text/css" href="stylesheets/userJoined.scss" />
+      <div className="userLeft" >
         <img alt='userPhoto error'
           className="userPhoto"
-          src="/user.png"
-          width="36px"
+          src="/joined-left.svg"
         ></img>
        <p>Akshay has Left</p>
 
