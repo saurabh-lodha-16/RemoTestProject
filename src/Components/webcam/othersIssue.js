@@ -8,7 +8,7 @@ export default class OtherWebcamIssue extends React.Component{
           className="userPhoto"
           src="/webcam-issue.svg"
         ></img>
-       <p>Other's Webcam Issue</p>
+       {/* <p>Other's Webcam Issue</p> */}
 
       </div>
     )

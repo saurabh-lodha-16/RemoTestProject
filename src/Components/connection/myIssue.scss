@@ -6,9 +6,20 @@
   height: 48px;
   border-radius: 5px;
   top: 90px;
-  right: 10px;
+  right: 60px;
   border: 2px solid #3f3955;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    border-bottom: 15px solid #3f3955;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+
 
   p {
     color: #3f3955;
@@ -19,7 +30,7 @@
   }
 
   .userPhoto {
-    float: left;
+    float: right;
     height: 48px;
     height: 48px;
     background: #3f3955;

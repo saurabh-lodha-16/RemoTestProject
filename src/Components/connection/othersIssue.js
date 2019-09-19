@@ -11,7 +11,7 @@ export default class Broadcast extends React.Component {
           className="userPhoto"
           src="/connection-issue.svg"
         ></img>
-       <p> Other's Connection Issue </p>
+       {/* <p> Other's Connection Issue </p> */}
 
       </div>
     )
