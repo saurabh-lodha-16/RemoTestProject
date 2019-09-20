@@ -3,11 +3,10 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     res.locals.metaTags = {
-        title: 'web-push-api',
-        description: 'Web Push Notification Full Stack Application With Node Js Restful API',
-        keywords: 'Web Push Notification Full Stack Application With Node Js Restful API',
+        title: 'Test Project',
+        description: 'Notification UI/UX designing for Test Project',
+        keywords: 'Notification UI/UX designing for Test Project',
         generator: '0.0.0.1',
-        author: 'Saurabh Kashyap'
     };
     res.json({
         status: 'ok',
