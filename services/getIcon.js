@@ -1,12 +1,12 @@
 const getIcon = {
-  'User Joined': '/joined-user.svg',
-  'User Left': '/joined-left.svg',
-  'Broadcast Started': '/broadcast-start.svg',
-  'Broadcast Stopped': '/broadcast-stop.svg',
-  'Other Connection Issue': '/connection-issue.svg',
-  'My Connection Issue': '/connection-issue.svg',
-  'My Webcam Issue': '/webcam-issue.svg',
-  'Other Webcam Issue': '/webcam-issue.svg',
+  'User Joined': 'png/joined-user.png',
+  'User Left': 'png/joined-left.png',
+  'Broadcast Started': '/png/broadcast-start.png',
+  'Broadcast Stopped': '/png/broadcast-stop.png',
+  'Other Connection Issue': '/png/connection-issue.png',
+  'My Connection Issue': '/png/connection-issue.png',
+  'My Webcam Issue': '/png/webcam-issue.png',
+  'Other Webcam Issue': '/png/webcam-issue.png',
 }
 
 module.exports = getIcon;
