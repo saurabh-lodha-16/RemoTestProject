@@ -6,7 +6,7 @@ var sectionStyle = {
   width: "100vw",
   height: "100vh",
   backgroundImage: "url('remo.jpg')",
-  backgroundRepeat:"no-repeat",
+  backgroundRepeat: "no-repeat",
 
 };
 function App() {

@@ -5,17 +5,18 @@ const Subscription = mongoose.model('subscribers');
 const q = require('q');
 const webPush = require('web-push');
 const keys = require('./../config/keys');
+const getIcon = require('../services/getIcon');
+
 router.post('/', (req, res) => {
-    const payload = {
+    let payload = {
         title: req.body.title,
         message: req.body.message,
-        url: req.body.url,
-        ttl: req.body.ttl,
-        icon: req.body.icon,
-        image: req.body.image,
-        badge: req.body.badge,
-        tag: req.body.tag
+        url: 'http://localhost:3000/',
+        ttl: 36000,
+        icon: getIcon[req.body.title]
     };
+    console.log(payload);
+
     Subscription.find({}, (err, subscriptions) => {
         if (err) {
             console.error(`Error occurred while getting subscriptions`);
