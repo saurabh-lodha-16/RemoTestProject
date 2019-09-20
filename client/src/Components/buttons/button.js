@@ -1,14 +1,14 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-import UserJoined from '../user/userJoined';
+import UserJoined from '../user/joined/userJoined';
 import './leftButton.scss';
-import BroadcastStart from '../broadcast/broadcastStart';
-import BroadcastStop from '../broadcast/broadcastStop';
-import MyWebcamIssue from '../webcam/myIssue';
-import OtherWebcamIssue from '../webcam/othersIssue';
-import MyConnIssue from '../connection/myIssue';
-import OtherConnIssue from '../connection/othersIssue';
-import UserLeft from '../user/userLeft';
+import BroadcastStart from '../broadcast/start/broadcastStart';
+import BroadcastStop from '../broadcast/stop/broadcastStop';
+import MyWebcamIssue from '../webcam/myIssue/myIssue';
+import OtherWebcamIssue from '../webcam/otherIssue/othersIssue';
+import MyConnIssue from '../connection/myIssue/myIssue';
+import OtherConnIssue from '../connection/otherIssue/othersIssue';
+import UserLeft from '../user/left/userLeft';
 
 
 
