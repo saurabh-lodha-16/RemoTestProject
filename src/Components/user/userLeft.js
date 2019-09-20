@@ -10,7 +10,7 @@ export default class UserLeft extends React.Component {
           className="userPhoto"
           src="/joined-left.svg"
         ></img>
-       <p>Akshay has Left</p>
+       <p>User has Left</p>
 
       </div>
 

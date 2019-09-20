@@ -10,7 +10,7 @@ export default class UserJoined extends React.Component {
           className="userPhoto"
           src="/joined-user.svg"
         ></img>
-        <p>Akshay has Joined</p>
+        <p>User has Joined</p>
 
       </div>
 
