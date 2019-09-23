@@ -33,7 +33,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
 app.use('/', index);
 app.use('/subscribe', subscribe);
 app.use('/push', push);
@@ -47,20 +46,12 @@ app.use(function (req, res, next) {
 
 if (app.get('env') === 'development') {
     app.use(function (err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
+        res.json({ error: err })
     });
 }
 
 app.use(function (err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
-    });
+    res.json({ error: err })
 });
 
 

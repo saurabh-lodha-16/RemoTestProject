@@ -67,7 +67,7 @@ router.post('/', (req, res) => {
       q.allSettled(parallelSubscriptionCalls).then((pushResults) => {
         console.info(pushResults);
       });
-      res.json({
+      res.status(200).json({
         data: 'Push triggered'
       });
     }
