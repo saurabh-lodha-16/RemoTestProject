@@ -22,7 +22,7 @@ This is the web application designed for showing In-app and Push Notifications f
 
 ## Running the project
 
-    $ npm install
+    $ npm install-packages
     $ npm run dev
     
 
