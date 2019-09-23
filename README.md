@@ -21,7 +21,10 @@ This is the web application designed for showing In-app and Push Notifications f
 ## Recommended Display Resolution
 
 
-As the background image is static, so it is recommended to run this project on a display with resolution **1920 x 1080.**
+As the background image is static, so it is recommended to run this project 
+on a display with resolution **1920 x 1080.** 
+
+(if the window is not fitting or over-fitting your window size, Please try zooming in or out your browser window)
 
 ## Running the project
 
