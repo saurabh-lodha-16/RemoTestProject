@@ -19,7 +19,9 @@ This is the web application designed for showing In-app and Push Notifications f
     2.  Its design has been made with the same standards as In-app notifications and the project is completed using Node.
 
 ## Recommended Display Resolution
-    As the background image is static, so it is recommended to run this project on a display with resolution 1920 x 1080.
+
+
+As the background image is static, so it is recommended to run this project on a display with resolution **1920 x 1080.**
 
 ## Running the project
 
