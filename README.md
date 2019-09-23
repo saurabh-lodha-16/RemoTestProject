@@ -18,17 +18,18 @@ This is the web application designed for showing In-app and Push Notifications f
     1.  Web-Push package has been used for sending Push Notifications, and its contents, message and other details can be modified on the server side. 
     2.  Its design has been made with the same standards as In-app notifications and the project is completed using Node.
 
-
+## Recommended Display Resolution
+    As the background image is static, so it is recommended to run this project on a display with resolution 1920 x 1080.
 
 ## Running the project
 
-    $ npm install-packages
+    $ npm run install-packages
     $ npm run dev
     
 
 ## For Sending Push Notifications
 
-    Visit http://localhost:5000/ and send the desired notification.
+    Visit http://localhost:5000/ and send the desired push notification.
 
 ## For Sending In-App Notifications
 
