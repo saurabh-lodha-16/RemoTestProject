@@ -4,6 +4,7 @@ import Notification from "../Notification";
 import { actions } from "../../Constants/action";
 
 import "./content.scss";
+import PushNotification from "../PushNotification";
 
 export default class Content extends React.Component {
   constructor() {
@@ -38,6 +39,7 @@ export default class Content extends React.Component {
         <div className="leftButton">
           <ul>{buttons}</ul>
         </div>
+      {/* <PushNotification /> */}
       </React.Fragment>
     );
   }

@@ -1,7 +1,7 @@
 let isSubscribed = false;
 let swRegistration = null;
 let applicationKey =
-  "BJzoSOXX5olIwEa5RlsTFJ_KCvPUlx9OXiuCiJM_YyMiSseGAA5NjHwd9NYGCrd1hnWTZxFCS9Va1ejLLx0VL_g";
+  "BDjfggxh23VR3POI0zdzAXs7g12xsiW9yShUynMzItKQGV8ULEyPz4G8MZCgbqzml8Umd9QvP4rzzgVNZ1K1DoU";
 
 // Url Encription
 function urlB64ToUint8Array(base64String) {
@@ -34,8 +34,10 @@ if ("serviceWorker" in navigator && "PushManager" in window) {
         isSubscribed = !(subscription === null);
 
         if (isSubscribed) {
+          console.log(swRegistration)
           console.log("User is subscribed");
         } else {
+          console.log(swRegistration)
           swRegistration.pushManager
             .subscribe({
               userVisibleOnly: true,

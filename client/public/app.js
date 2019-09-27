@@ -1,7 +1,7 @@
 let isSubscribed = false;
 let swRegistration = null;
 let applicationKey =
-  "BM_Knkk6niAtwrXoArLzK8-4g8L7_PAC56lypr41alZZ4IxKrgAGf0btDph9xW1O-8HcCsJS7b3BrUMsNvJkemU";
+  "BDjfggxh23VR3POI0zdzAXs7g12xsiW9yShUynMzItKQGV8ULEyPz4G8MZCgbqzml8Umd9QvP4rzzgVNZ1K1DoU";
 
 // Url Encription
 function urlB64ToUint8Array(base64String) {
@@ -24,7 +24,7 @@ if ("serviceWorker" in navigator && "PushManager" in window) {
   console.log("Service Worker and Push is supported");
 
   navigator.serviceWorker
-    .register("sw.js")
+    .register("/sw.js")
     .then(function(swReg) {
       console.log("service worker registered");
 
@@ -36,6 +36,7 @@ if ("serviceWorker" in navigator && "PushManager" in window) {
         if (isSubscribed) {
           console.log("User is already subscribed");
         } else {
+          console.log(swRegistration)
           swRegistration.pushManager
             .subscribe({
               userVisibleOnly: true,
@@ -51,7 +52,7 @@ if ("serviceWorker" in navigator && "PushManager" in window) {
               isSubscribed = true;
             })
             .catch(function(err) {
-              console.log("Failed to subscribe user: ", err);
+              console.log("Failed to subscribe user: ", err.message);
             });
         }
       });
@@ -66,7 +67,7 @@ if ("serviceWorker" in navigator && "PushManager" in window) {
 // Send request to database for add new subscriber
 function saveSubscription(subscription) {
   let xmlHttp = new XMLHttpRequest();
-  console.log("===================");
+  console.log("===================saveSubscription", subscription);
 
   xmlHttp.open("POST", "http://localhost:5000/subscribe/");
   xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");

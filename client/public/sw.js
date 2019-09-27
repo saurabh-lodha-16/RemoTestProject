@@ -1,4 +1,4 @@
-let notificationUrl = "";
+let notificationUrl = "http://localhost:3000";
 
 self.addEventListener("push", function(event) {
   console.log("Push received: ", event);
