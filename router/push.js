@@ -47,6 +47,7 @@ router.post("/", (req, res) => {
           webPush
             .sendNotification(pushSubscription, pushPayload, pushOptions)
             .then(value => {
+              console.log(value);
               resolve({
                 status: true,
                 endpoint: subscription.endpoint,
@@ -54,10 +55,14 @@ router.post("/", (req, res) => {
               });
             })
             .catch(err => {
+              console.log(
+                err,
+                "======================================================================"
+              );
               reject({
                 status: false,
                 endpoint: subscription.endpoint,
-                data: err
+                data: err.message
               });
             });
         });

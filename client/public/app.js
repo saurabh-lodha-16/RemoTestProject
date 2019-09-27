@@ -36,7 +36,7 @@ if ("serviceWorker" in navigator && "PushManager" in window) {
         if (isSubscribed) {
           console.log("User is already subscribed");
         } else {
-          console.log(swRegistration)
+          console.log(swRegistration);
           swRegistration.pushManager
             .subscribe({
               userVisibleOnly: true,

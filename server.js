@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+var cors = require("cors");
 
 require("./model/subscribers_model");
 
@@ -28,6 +29,7 @@ app.use(
     extended: true
   })
 );
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, "public")));
 

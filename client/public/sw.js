@@ -1,4 +1,4 @@
-let notificationUrl = "http://localhost:3000";
+let notificationUrl = "https://localhost:3000";
 
 self.addEventListener("push", function(event) {
   console.log("Push received: ", event);
@@ -24,6 +24,7 @@ self.addEventListener("notificationclick", function(event) {
       })
       .then(function(clientList) {
         if (clients.openWindow) {
+          console.log("sw.js/notificationclick/clientlist");
           return clients.openWindow(notificationUrl);
         }
       })
